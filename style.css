@@ -1,0 +1,151 @@
+body, html {
+    height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+html {
+    font-size: 18px;
+}
+
+header {
+	width: 100%;
+	height: 10%;
+	background-color: #F2F2F2;
+	position: relative;
+}
+
+header img {
+	height: 90%;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a div:hover {
+	background-color: #9B73A9;
+}
+
+nav {
+	float: right;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+}
+
+nav li {
+	padding: 40px 20px;
+}
+
+nav li:hover {
+	background-color: #9B73A9;
+}
+
+main {
+    height: 80%;
+}
+
+.row {
+	width: 100%;
+	height: 50%;
+}
+
+.cell1 {
+	width: 60%;
+	height: 100%;
+	background-color: #99FFCC;
+	float: left;
+	position: relative;
+}
+
+.cell2 {
+	width: 40%;
+	height: 100%;
+	background: url("images/hs1g.png") center no-repeat;
+	background-size: contain;
+	float: left;
+	position: relative;
+}
+
+.cell2:hover {
+	background: url("images/hs2g.png") center no-repeat;
+	background-size: contain;
+	opacity: 50%;
+}
+
+.cell3 {
+	width: 50%;
+	height: 100%;
+	background-color: #FFFF99;
+	float: left;
+	position: relative;
+}
+
+.cell4 {
+	width: 50%;
+	height: 100%;
+	background-color: #FFAAAA;
+	float: left;
+	position: relative;
+}
+
+.projects {
+	height: 200px;
+}
+
+.projects img {
+	height: 200px;
+}
+
+h2 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-size: 75px;
+	text-transform: uppercase;
+    color: white;
+}
+
+footer {
+	background-color: #F2F2F2;
+	clear: both;
+	height: 10%;
+	position: relative;
+}
+
+footer ul {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:500px){
+    .cell1 {width: 100%; height: 50%}
+    .cell2 {width: 100%; height: 50%}
+    .cell3 {width: 100%; height: 50%}
+    .cell4 {width: 100%; height: 50%}
+}
+
+@media screen and (max-width:750px){
+    h2 {font-size: 45px}
+}
